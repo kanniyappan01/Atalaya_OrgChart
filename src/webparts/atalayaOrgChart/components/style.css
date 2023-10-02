@@ -1,4 +1,4 @@
-/* #fff0db */
+
 * {
   margin: 0;
   padding: 0;
@@ -44,14 +44,17 @@
 }
 
 .node rect {
-  fill: #fbf6ef !important;
+  fill: #fff0db !important;
+  stroke: #a9804470 !important;
 }
 
 .node .olivia-f0 {
   fill: #a98044 !important;
   font-weight: 600 !important;
 }
-
+.node .olivia-f1{
+  font-weight: 500 !important;
+}
 .boc-edit-form-instruments {
   /* margin: 0 !important; */
   min-height: 0 !important;
@@ -88,3 +91,13 @@
 .ms-BasePicker-text::after {
   border-color: #a98044 !important;
 }
+
+[data-l-id] path,
+[data-ctrl-ec-id] circle,
+[data-ctrl-ec-id] line
+ {
+  stroke: #a98044 !important;
+}
+/* [data-ctrl-ec-id] circle {
+  stroke: #a98044 !important;
+} */

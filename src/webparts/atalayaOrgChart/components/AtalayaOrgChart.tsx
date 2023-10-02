@@ -9,20 +9,13 @@ import './style.css'
 export default class AtalayaOrgChart extends React.Component<IAtalayaOrgChartProps, {}> {
   constructor(props:IAtalayaOrgChartProps){
     super(props);
+    
     graph.setup({
       spfxContext:this.props.context,
     })
   }
 
   public render(): React.ReactElement<IAtalayaOrgChartProps> {
-    // const {
-    //   description,
-    //   isDarkTheme,
-    //   environmentMessage,
-    //   hasTeamsContext,
-    //   userDisplayName
-    // } = this.props;
-
     return (
       <OrgChart context={this.props.context}/>
     );
